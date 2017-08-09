@@ -1,0 +1,17 @@
+# Intellij IDEA
+/.idea/*
+*.iml
+
+# npm
+npm-debug.log
+/package-lock.json
+
+# library
+/node_modules/*
+
+# Prod build
+/build/*
+/bbt-cicero-*.tgz
+
+# log
+/log/

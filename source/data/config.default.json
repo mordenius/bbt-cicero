@@ -1,0 +1,9 @@
+{
+	"port": 10000,
+	"server": null,
+	"shutdownDelay": 3000,
+	"log": {
+		"message": true,
+		"unpermitted": true
+	}
+}

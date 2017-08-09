@@ -1,0 +1,70 @@
+{
+	"name": "bbt-cicero",
+	"version": "0.0.8",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "babel-node test",
+		"start": "node build/cicero.min",
+		"run-dev": "rimraf ./log && babel-node ./source/js/index",
+		"prod": "webpack --define process.env.NODE_ENV='\"production\"' --config ./webpack.prod.config.js",
+		"lint:js": "eslint ./source/js --ext .jsx --ext .js",
+		"lint-staged": "lint-staged"
+	},
+	"pre-commit": "lint-staged",
+	"lint-staged": {
+		"*.js": "eslint"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mordenius/bbt-cicero.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/mordenius/bbt-cicero/issues"
+	},
+	"homepage": "https://github.com/mordenius/bbt-cicero#readme",
+	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-core": "^6.25.0",
+		"babel-eslint": "^7.2.3",
+		"babel-loader": "^7.1.1",
+		"babel-plugin-root-import": "^5.1.0",
+		"babel-preset-env": "^1.6.0",
+		"babili-webpack-plugin": "^0.1.2",
+		"clean-webpack-plugin": "^0.1.16",
+		"eslint": "^4.4.1",
+		"eslint-config-airbnb-base": "^11.3.1",
+		"eslint-config-prettier": "^2.3.0",
+		"eslint-plugin-import": "^2.7.0",
+		"ip": "^1.1.5",
+		"json-loader": "^0.5.7",
+		"lint-staged": "^4.0.3",
+		"pre-commit": "^1.2.2",
+		"prettier": "^1.5.3",
+		"rimraf": "^2.6.1",
+		"webpack": "^3.5.2"
+	},
+	"dependencies": {
+		"bbt-loader": "^1.0.9",
+		"fs": "0.0.1-security",
+		"lodash": "^4.17.4",
+		"mkdirp": "^0.5.1",
+		"moment": "^2.18.1",
+		"redux-store-controller": "^1.1.3",
+		"socket.io": "^2.0.3",
+		"socket.io-client": "^2.0.3",
+		"url": "^0.11.0"
+	},
+	"bundledDependencies": [
+		"bbt-loader",
+		"fs",
+		"lodash",
+		"mkdirp",
+		"moment",
+		"redux-store-controller",
+		"socket.io",
+		"socket.io-client"
+	]
+}

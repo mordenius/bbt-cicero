@@ -1,0 +1,16 @@
+/.git/
+/.idea/
+
+/.babelrc
+/.eslintrc
+/.npmignore
+/.gitignore
+
+/bbt-cicero-*.tgz
+
+/source/
+/log/
+/test/
+
+/package-lock.json
+/webpack.prod.config.js
